@@ -7,7 +7,7 @@ import pickle
 from PIL import Image
 
 st.image("inno_image.webp")
-st.title(r'Machine Learning for Dog Image Recognition')
+st.title('Machine Learning for Dog Image Recognition')
 
 
 model = pickle.load(open("image.pkl",'rb'))
