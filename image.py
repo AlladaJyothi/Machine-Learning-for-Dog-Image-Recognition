@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import cv2
+# import cv2
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 import pickle
