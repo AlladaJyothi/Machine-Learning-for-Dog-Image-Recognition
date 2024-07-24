@@ -12,10 +12,10 @@ st.title('Machine Learning for Dog Image Recognition')
 
 model = pickle.load(open("image.pkl",'rb'))
 
-image=st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
-st.image(image)
+image1=st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+st.image(image1)
 
-image = Image.open(image)
+image = Image.open(image1)
 
 arr = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
 img_resized = cv2.resize(arr,(20,20))
