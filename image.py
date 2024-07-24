@@ -13,7 +13,7 @@ st.image("inno_image.webp")
 name=st.title(r'Machine Learning for Dog Image Recognition')
 
 
-model = pickle.load(open("image.pkl','rb'))
+model = pickle.load(open("image.pkl",'rb'))
 
 image=st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 st.image(image,caption='Uploaded Image',use_column_width=True)
